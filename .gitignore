@@ -1,0 +1,9 @@
+# Claude Code 本地设置（机器相关，不纳入版本库）
+.claude/settings.local.json
+
+# 系统 / 编辑器杂项
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
