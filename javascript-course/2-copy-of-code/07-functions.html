@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Functions</title>
-  </head>
-  <body>
-    <script>
-      /*
-      function function1() {
-        console.log('hello');
-        console.log(2 + 2);
-      }
 
-      function1();
-      function1();
-      */
+<head>
+  <title>Functions</title>
+</head>
 
-      function calculateTax(cost, taxPercent = 0.1) {
-        console.log(cost * taxPercent);
-      }
+<body>
 
-      calculateTax(2000, 0.2);
-      calculateTax(5000);
-    </script>
-  </body>
+  <script>
+    function function1() {
+      console.log('function1Loaded');
+    }
+
+    const function2 = () => {
+      console.log('function2Loaded');
+    }
+
+    function1();
+    function2();
+
+  </script>
+</body>
+
 </html>
