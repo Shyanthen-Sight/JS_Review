@@ -24,18 +24,17 @@
     //Gamer function
     //==========================
     function playGame(playerMove) {
+      //execute computer move function
       const computerMove = pickComputerMove();
 
       let result = '';
     
       if (playerMove === 'scissors') {
          result =judgeWinner(playerMove, computerMove);
-    
       } else 
 
       if (playerMove === 'paper') {
          result =judgeWinner(playerMove, computerMove);
-       
       } else 
 
       if (playerMove === 'rock') {
@@ -46,6 +45,8 @@
       alert(`You picked ${playerMove}. 
         Computer picked ${computerMove}. ${result}`);
     }
+
+    
     //==========================
     //Computer move function
     //==========================
