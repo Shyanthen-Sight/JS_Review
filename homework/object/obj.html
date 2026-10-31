@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const product = {
+      name: "basketball",
+      price: 2095
+    };
+
+    product.price += 500;
+
+    //the two are equal
+    product['delivery-time'] = '3 days';
+    product.level = 3;
+
+    console.log(product)
+    //===============================
+    const product1 = {
+      name: 'apple',
+      price: 1000,
+    };
+    const product2 = {
+      name: 'orange',
+      price: 1150,
+    };
+
+    const comparePrice = (product1, product2) => {
+      if (product1.price > product2.price) {
+        return product2.price
+      } else {
+        return product1.price
+      }
+    };
+
+    console.log(comparePrice(product1, product2));
+    //===============================
+    const isSameProduct = (product1, product2) => {
+      return product1.name === product2.name && product1.price === product2.price
+    };
+
+    console.log(isSameProduct(product1, product2));
+    //===============================
+    const words = 'Good Morning';
+    console.log(words.toLowerCase());
+    //===============================
+    const message = 'test';
+    console.log(message.repeat(3));
+    console.log(message.repeat(0));
+    //===============================
+    let caculation = localStorage.getItem || '';
+    const updateCaculation = (value) => {
+      caculation += value
+      document.querySelector('.js-caculation').innerText = caculation
+      localStorage.setItem('caculation',caculation)
+    }
+    //===============================
+    //===============================
+  </script>
+</body>
+
+</html>
